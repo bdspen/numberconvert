@@ -2,9 +2,8 @@
     class NumbersToWords
     {
         function numberToWordConverter($input)
-        {
+        {   $input = "3";
             $split_input = str_split($input);
-            $output_string = "";
 
             $ones = array(1 => 'one',
                         2    => 'two',
@@ -36,11 +35,13 @@
                         90    => 'ninety'
                     );
 
-                                $output = $ones[$split_input];
+                                $output = $ones[$input];
 
-                    var_dump($split_input);
+                    var_dump($output);
+                    var_dump($ones);
+                    var_dump($input);
                     return $output;
-                
+
         }
     }
  ?>
